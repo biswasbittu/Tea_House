@@ -2,97 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/5126b1a57b.js" crossorigin="anonymous"></script>
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif']
+          }
 
-    <!-- Font Awesom -->
-    <script src="https://kit.fontawesome.com/5126b1a57b.js" crossorigin="anonymous"></script>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        manrope: ['Manrope', 'sans-serif'],
-                    }
-                }
-            }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
-<body class="">
-    <header class="relative bg-white overflow-hidden container mx-auto">
-        <!-- Hero -->
-        <section class="container mx-auto px-6 py-12 md:py-24 lg:py-40 lg:max-w-[1700px]">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
-                <div class="w-full md:w-1/2 space-y-6 md:space-y-10 z-10">
-                    <h1
-                        class="text-5xl md:text-6xl lg:text-7xl 3xl:text-9xl font-extrabold text-gray-900 leading-[1.1]">
-                        Its good <br>
-                        tea time at The <br>
-                        Tea House
-                    </h1>
-                    <p
-                        class="text-gray-500 text-lg md:text-xl lg:text-3xl max-w-lg lg:max-w-2xl leading-relaxed pt-4 md:pt-8 ">
-                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
-                    </p>
-                    <div class="pt-4">
-                        <!-- <button
-                        class="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-lg shadow-lg hover:shadow-orange-500/30 hover:scale-105 transition transform duration-300  ">
-                        Explore More
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-5 h-5 3xl:w-8 3xl:h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg>
-                    </button> -->
-
-                        <button
-                            class="flex items-center gap-2 px-6  py-4 md:px-12 md:py-6  bg-gradient-to-r from-orange-500  to-red-500 text-white font-bold rounded-lg shadow-lg hover:shadow-orange-500/30 hover:scale-105 transition transform  duration-300">Explore
-                            More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="3" stroke="currentColor" class="w-5 h-5 3xl:w-8 3xl:h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg></button>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 relative flex justify-center md:justify-end">
-                   <div class="">
-                <div class="absolute top-10 right-10 w-[300px] h-[300px] bg-green-100 rounded-full blur-3xl -z-10 opacity-50"></div>
-                   
-                    <img  class="relative  w-full max-w-md md:max-w-3xl object-contain drop-shadow-2xl transform rotate-[-5deg] hover:rotate-0 transition duration-500" src="./images/banner.png" alt="">
-
-                    <div class="absolute bottom-4 left-4 md:left-4  lg:bottom-10  bg-white p-4 md:p-5 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-4 animate-bounce-slow 3xl:p-8 3xl:bottom-20 3xl:-left-20">
-                    <div class="bg-yellow-100 p-2 rounded-full 3xl:p-4">
-                        <svg class="w-6 h-6 3xl:w-10 3xl:h-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="text-xl 3xl:text-3xl font-bold text-gray-900">5.00</p>
-                        <p class="text-xs 3xl:text-lg text-gray-500">Trust Pilot Ratings</p>
-                    </div>
-                </div>
-                   </div>
-                </div>
-            </div>
-        </section>
-
-
+<body class="font-manrope ">
+  <main class="max-w-screen-xl mx-auto px-4 md:px-16 lg:px-28">
+    <header class="flex pt-10 mb-20">
+      <!-- Text-content -->
+      <div>
+        <h1 class="font-extrabold md:text-5xl lg:text-7xl">It's good <br class="hidden md:block lg:block" >
+          tea time at  The <br class="hidden lg:block"> Tea House</h1>
+        <p class="w-3/4 font-thin font text-gray-400 mt-4 leading-tight">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
+          Buds.</p>
+        <button class=" mt-4 flex items-center gap-2 px-6 py-4 bg-gradient-to-r  from-orange-500 to-red-500 text-white 
+        font-bold rounded-lg shadow-lg
+         hover:shadow-orange-500/50 hover:scale-95 transition transform duration-300 ">Explore More <i class="text-xl fa-solid fa-arrow-right -rotate-45"></i>
+         <!-- <svg
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"
+            class="w-5 h-5 3xl:w-8 3xl:h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+          </svg> -->
+        </button>
+      </div>
+      <!-- imade content -->
+      <div class="relative">
+        <div>
+          <img class="w-full" src="./images/banner.png" alt="">
+        </div>
+        <div class=" absolute top-28 md:top-52 flex items-center  gap-2 bg-white shadow-lg md:px-4 py-2 md:py-4 rounded-lg">
+          <div><i class="fa-solid fa-star md:text-2xl text-amber-500"></i></div>
+          <div>
+            <p class="md:text-2xl font-bold ">5.00</p>
+            <p class="text-gray-400 ">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+  </main>
 </body>
 
 </html>
